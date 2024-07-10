@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lm"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ptextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_tertiary95"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Away or towards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/xtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#F5EEFF"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="X acceleration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F5EEFF"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Y acceleration"
+        app:layout_constraintBottom_toTopOf="@+id/ztextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xtextView"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <TextView
+        android:id="@+id/ztextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:background="@color/material_dynamic_tertiary95"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Z acceleration"
+        app:layout_constraintBottom_toTopOf="@+id/ptextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
